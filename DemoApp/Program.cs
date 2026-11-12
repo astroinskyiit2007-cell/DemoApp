@@ -1,1 +1,1 @@
-﻿Console.Write("Введіть ваше ім'я: "); string? userName = Console.ReadLine(); Console.WriteLine($"Вітаю {userName}!");
+﻿Console.Write("Введіть ваше ім'я: "); string? userName = Console.ReadLine(); Console.Write("Введіть ваш вік: "); if (int.TryParse(Console.ReadLine(), out int age)) { string status = age >= 18 ? "повнолітній(ня)" : "неповнолітній(ня)"; Console.WriteLine($"Користувач: {userName}, вік: {age} років ({status})."); } else { Console.WriteLine($"Користувач: {userName}. Введено некоректний вік."); }
